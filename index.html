@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+    <header style="font-size:150%; text-align:center;">
+      <h1>Minesweeper Variant</h1>
+      <p>No fancy web dev here, just a quick hosting of an old Minesweeper variant I created and deployed to the Android app store some years ago. It was built in unity and I had to bring it up to date, mildly port it, and build and deploy it here via WebGL.</p>
+    </header>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=360 height=640></canvas>
       <div id="unity-loading-bar">
@@ -58,9 +62,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Builds.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Builds.data.gz",
-        frameworkUrl: buildUrl + "/Builds.framework.js.gz",
-        codeUrl: buildUrl + "/Builds.wasm.gz",
+        dataUrl: buildUrl + "/Builds.data",
+        frameworkUrl: buildUrl + "/Builds.framework.js",
+        codeUrl: buildUrl + "/Builds.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "John Hornick",
         productName: "MinesweeperPlus",
